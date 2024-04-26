@@ -1,0 +1,55 @@
+[staticPage]
+useContent = 1
+default = 0
+==
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <link rel="stylesheet" type="text/css" href="{{'assets/css/siglario.css?_=407cdbc9d8d46554f78d329846ede7a21' | theme }}">
+  
+  <!-- Head -->
+  {% partial 'blocks/head' %}
+
+	<script type="text/javascript" class="init">
+	dt_demo.init({
+		jquery: function () {
+
+$(document).ready(function() {
+    $('#siglario-tb').DataTable({
+        buttons: [
+            {
+                extend: 'searchPanes',
+                config: {
+                    cascadePanes: false
+                }
+            }
+        ],
+        dom: 'Bfrtip'
+    });
+});
+		},
+		vanilla: function () {
+				
+		}
+	});
+	</script>
+</head>
+
+<body>
+
+  <!-- Header -->
+  {% partial 'blocks/header' %}
+  
+  <!-- Breadcrumbs -->
+  {% partial 'blocks/breadcrumbs' %}
+
+  {% page %}
+
+  <!-- Footer -->
+  {% partial 'blocks/footer' %}
+
+</body>
+
+</html>

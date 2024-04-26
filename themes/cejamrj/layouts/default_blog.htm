@@ -1,0 +1,52 @@
+description = "Default layout"
+==
+<!DOCTYPE html>
+<html>
+    <head>
+        {% partial 'site/head/head-meta' %}
+        <title>Intranet CEJAM RJ - {{ this.page.meta_title ?: placeholder('pageTitle') }}</title>
+        <meta name="description" content="{{ this.page.meta_description }}">
+        <meta name="title" content="{{ this.page.meta_title }}">
+        {% partial 'site/head/head-links' %}
+        {% partial 'site/head/head-scripts' %}
+        {% partial 'site/head/analytics-code' %}
+    </head>
+    <body class="{{ 'page-'~this.page.id }}">
+
+        <!-- Header -->
+<!-- ======= Top Bar ======= -->
+  <div id="topbar" class="d-flex align-items-center fixed-top">
+    <div class="container d-flex justify-content-between">
+      <div class="contact-info d-flex align-items-center">
+        <i class="bi bi-envelope"></i> <a href="mailto:tirio@cejam.org.br">sederj@cejam.org.br</a>
+        <i class="bi bi-phone"></i>SEDE - (21)&nbsp;99999-9999
+      </div>
+      <div class="d-none d-lg-flex social-links align-items-center">
+        <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
+      </div>
+    </div>
+  </div>
+
+        <!-- Header -->
+        {% partial 'blocks/header' %}
+
+        {% partial 'site/flash-messages' %}
+
+        <!-- Content -->
+        <section style="padding-bottom: 0px" id="layout-content">
+            {% page %}
+        </section>
+
+        <!-- Footer -->
+        {% partial 'blocks/footer' %}
+
+        <!-- Mobile
+        {% partial 'site/nav-mobile' %} -->
+
+        <!-- How the page is made
+        {% partial 'site/how-its-made' %} -->
+    </body>
+</html>

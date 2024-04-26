@@ -1,0 +1,9 @@
+name: Intranet CEJAM RJ
+description: "Tema desenvolvido para a Intranet do CEJAM RJ."
+author: Anderson Aragão
+homepage: 'http://cejam.org.br/'
+authorCode: Anderson
+code: cejamrj
+parent: cejamrj
+database: '0'
+form: fields.yaml

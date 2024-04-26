@@ -1,0 +1,8 @@
+{
+    "name": "cejam/cejamrj-theme",
+    "type": "october-theme",
+    "description": "Tema do CEJAM RJ.",
+    "require": {
+        "composer/installers": "~1.0"
+    }
+}

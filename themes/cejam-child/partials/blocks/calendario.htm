@@ -1,0 +1,92 @@
+<script src='{{ 'assets/js/calendar.js'|theme }}'></script>
+<script src='{{ 'assets/js/calendar-pt-br.js'|theme }}'></script>
+<script>
+
+  document.addEventListener('DOMContentLoaded', function() {
+    var calendarEl = document.getElementById('calendar');
+
+    var calendar = new FullCalendar.Calendar(calendarEl, {
+    contentHeight: window.innerWidth >= 765 ? 600 : 400,
+    locale: 'pt-br',
+  headerToolbar: {
+    left: 'prev,next today',
+    center: 'title',
+    right: window.innerWidth >= 765 ? 'dayGridMonth,timeGridWeek,listMonth' : 'dayGridMonth,listMonth'
+  },
+    titleFormat: {
+year: window.innerWidth >= 765 ? 'numeric' : 'numeric',
+
+month: window.innerWidth >= 765 ? 'long' : 'numeric',
+  },
+      initialView: window.innerWidth >= 765 ? 'dayGridMonth' : 'listMonth',
+      editable: false,
+      selectable: true,
+      businessHours: true,
+      dayMaxEvents: true, // allow "more" link when too many events
+      events: [
+        {
+          title: '🎉 Ano Novo',
+          start: '2024-01-01',
+          color: 'purple'
+        },
+        {
+          title: '🎄 Natal',
+          start: '2023-12-25',
+          color: 'red'
+        },
+        {
+          groupId: 999,
+          title: 'Repeating Event',
+          start: '2024-01-09T16:00:00'
+        },
+        {
+          groupId: 999,
+          title: 'Repeating Event',
+          start: '2024-01-16T16:00:00'
+        },
+        {
+          title: '🎂 Rodrigo Figueiredo',
+          start: '2023-12-01',
+          color: 'green'
+        },
+        {
+          title: 'Meeting',
+          start: '2024-01-12T10:30:00',
+          end: '2024-01-12T12:30:00'
+        },
+        {
+          title: 'Lunch',
+          start: '2024-01-12T12:00:00'
+        },
+        {
+          title: 'Meeting',
+          start: '2024-01-12T14:30:00'
+        },
+        {
+          title: 'Happy Hour',
+          start: '2024-01-12T17:30:00'
+        },
+        {
+          title: 'Dinner',
+          start: '2024-01-12T20:00:00'
+        },
+        {
+          title: 'Birthday Party',
+          start: '2024-01-13T07:00:00'
+        },
+        {
+          title: 'Click for Google',
+          url: 'http://google.com/',
+          start: '2024-01-28'
+        }
+      ]
+    });
+
+    calendar.render();
+  });
+
+</script>
+
+<section style='padding-top: 30px;' id="why-us" class="why-us">
+  <div class="container" id='calendar'></div>
+   </section>

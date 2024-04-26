@@ -1,0 +1,214 @@
+[staticPage]
+useContent = 1
+default = 1
+==
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>{{ this.page.title }}</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="/themes/cejamrj/assets/img/favicon.png" rel="icon">
+  <link href="/themes/cejamrj/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Arquivos CSS Proprietários -->
+  <link href="{{'assets/vendor/fontawesome-free/css/all.min.css' | theme }}" rel="stylesheet">
+  <link href="{{'assets/vendor/animate.css/animate.min.css' | theme }}" rel="stylesheet">
+  <link href="{{'assets/vendor/bootstrap/css/bootstrap.min.css' | theme }}" rel="stylesheet">
+  <link href="{{'assets/vendor/bootstrap-icons/bootstrap-icons.css' | theme }}" rel="stylesheet">
+  <link href="{{'assets/vendor/boxicons/css/boxicons.min.css' | theme }}" rel="stylesheet">
+  <link href="{{'assets/vendor/glightbox/css/glightbox.min.css' | theme }}" rel="stylesheet">
+  <link href="{{'assets/vendor/remixicon/remixicon.css' | theme }}" rel="stylesheet">
+  <link href="{{'assets/vendor/swiper/swiper-bundle.min.css' | theme }}" rel="stylesheet">
+
+  <!-- Arquivo CSS Principal do Template -->
+  <link href="{{'assets/css/style.css' | theme }}" rel="stylesheet">
+
+  <!-- =======================================================
+  * Nome do Template: CEJAM RJ
+  * Atualizado em: 14 de dezembro de 2023 with Bootstrap v5.3.2
+  * URL do Template: http://intranet.cejamrj.org.br/
+  * Author: Anderson Aragão
+  ======================================================== -->
+  <style>
+    iframe{
+        width: 100%;
+        height: 100%;
+        border: 1px solid #ccc;
+    }
+  </style>
+</head>
+
+<body>
+<!-- ======= Top Bar ======= -->
+  <div id="topbar" class="d-flex align-items-center fixed-top">
+    <div class="container d-flex justify-content-between">
+      <div class="contact-info d-flex align-items-center">
+        <i class="bi bi-envelope"></i> <a href="mailto:tirio@cejam.org.br">sederj@cejam.org.br</a>
+        <i class="bi bi-phone"></i>SEDE -&nbsp;(21) 99999-9999
+      </div>
+      <div class="d-none d-lg-flex social-links align-items-center">
+        <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center">
+
+      <!-- <h1 class="logo me-auto"><a href="index.html">Intranet CEJAM RJ</a></h1> -->
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <h1 class="logo me-auto"><a href="../../../"><img src="{{ 'assets/img/logo.png'|theme }}" alt="" class="img-fluid"></a></h1>
+      
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a class="nav-link scrollto" href="../../#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="../../#about">Quem somos</a></li>
+          <li class="dropdown"><a class="nav-link scrollto active" href="../../#services"><span>Links úteis</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a class="nav-link scrollto" href="../../cardapio">Cardápio do Dia</a></li>
+              <!-- <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="#">Deep Drop Down 1</a></li>
+                  <li><a href="#">Deep Drop Down 2</a></li>
+                  <li><a href="#">Deep Drop Down 3</a></li>
+                  <li><a href="#">Deep Drop Down 4</a></li>
+                  <li><a href="#">Deep Drop Down 5</a></li>
+                </ul>
+              </li> -->
+              <li><a href="#">Abertura de Chamados</a></li>
+              <li><a href="../../lista-de-ramais">Lista de Ramais</a></li>
+            </ul>
+          </li>
+          <!-- <li><a class="nav-link scrollto" href="#services">Links úteis</a></li> -->
+          <li><a class="nav-link scrollto" href="../../#departments">Fique por dentro</a></li>
+          <li><a class="nav-link scrollto" href="../../#doctors">Equipe</a></li>
+          <!-- <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#">Drop Down 1</a></li>
+              <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="#">Deep Drop Down 1</a></li>
+                  <li><a href="#">Deep Drop Down 2</a></li>
+                  <li><a href="#">Deep Drop Down 3</a></li>
+                  <li><a href="#">Deep Drop Down 4</a></li>
+                  <li><a href="#">Deep Drop Down 5</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Drop Down 2</a></li>
+              <li><a href="#">Drop Down 3</a></li>
+              <li><a href="#">Drop Down 4</a></li>
+            </ul>
+          </li> -->
+          <li><a class="nav-link scrollto" href="../../#contact">Contato</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+      <a href="../../admin" class="appointment-btn scrollto"><span class="d-none d-md-inline"></span>Login</a>
+
+    </div>
+  </header><!-- End Header -->
+
+        {% page %}
+
+<!-- ======= Footer ======= -->
+  <footer id="footer">
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h3>CEJAM RJ</h3>
+            <p>
+              R. República Árabe da Síria, 373 <br>
+              Rio de Janeiro, RJ - 21931-370<br>
+              Brasil <br><br>
+              <strong>Phone:</strong> (21) 99999-9999<br>
+              <strong>Email:</strong> sederj@cejam.org.br<br>
+            </p>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Menu de navegação</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Quem somos</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Links úteis</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Termos de serviço</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacidade</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Mais visitados</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4 col-md-6 footer-newsletter">
+            <h4>Cadastrar-se no boletim informativo</h4>
+            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+            <form action="" method="post">
+              <input type="email" name="email"><input type="submit" value="Inscrever-se">
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container d-md-flex py-4">
+
+      <div class="me-md-auto text-center text-md-start">
+        <div class="copyright">
+          &copy; Copyright <strong><span>CEJAM RJ</span></strong>. Todos os direitos reservados
+        </div>
+        <div class="credits">
+          <!-- Tema criado para a Intranet do CEJAM RJ por Anderson Aragão. -->
+          Desenvolvido pelo setor de <a href="http://intranet.cejamrj.org.br/">TI</a>
+        </div>
+      </div>
+      <div class="social-links text-center text-md-right pt-3 pt-md-0">
+        <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+        <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+        <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+  
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Arquivos JS Proprietários -->
+  <script src="{{'assets/vendor/purecounter/purecounter_vanilla.js' | theme }}"></script>
+  <script src="{{'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' | theme }}"></script>
+  <script src="{{'assets/vendor/glightbox/js/glightbox.min.js' | theme }}"></script>
+  <script src="{{'assets/vendor/swiper/swiper-bundle.min.js' | theme }}"></script>
+  <script src="{{'assets/vendor/php-email-form/validate.js' | theme }}"></script>
+
+  <!-- Arquivo JS Principal do Template -->
+  <script src="{{'assets/js/main.js' | theme }}"></script>
+
+</body>
+</html>

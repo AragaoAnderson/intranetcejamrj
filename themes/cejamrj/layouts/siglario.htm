@@ -1,0 +1,56 @@
+[staticPage]
+useContent = 1
+default = 0
+==
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <!-- Head -->
+  {% partial 'blocks/head' %}
+
+	<script type="text/javascript" class="init">
+	dt_demo.init({
+		jquery: function () {
+
+$(document).ready(function() {
+    $('#siglario').DataTable({
+        dom: 'Plfrtip',
+        columnDefs: [
+            {
+                searchPanes: {
+                    show: true, initCollapsed: true
+                },
+                targets: [0, 1]
+            },
+            {
+                searchPanes: {
+                    show: false, initCollapsed: true
+                },
+                targets: [2]
+            }
+        ]
+    });
+});
+		},
+		vanilla: function () {
+				
+		}
+	});
+	</script>
+</head>
+
+<body>
+
+  <!-- Header -->
+  {% partial 'blocks/header' %}
+  
+  {% page %}
+
+  <!-- Footer -->
+  {% partial 'blocks/footer' %}
+
+</body>
+
+</html>

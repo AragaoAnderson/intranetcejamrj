@@ -1,0 +1,55 @@
+url = "/aniversariantes"
+layout = "default"
+title = "aniversariantes"
+meta_title = "Aniversariantes"
+==
+<!-- Breadcrumbs -->
+  {% partial 'blocks/breadcrumbs' %}
+
+<style>
+
+/* Responsive iFrame */
+
+.responsive-iframe-container {
+position: relative;
+padding-bottom: 56.25%;
+padding-top: 30px;
+margin-top: 30px;
+margin-bottom: -100px;
+height: 0;
+overflow: hidden;
+display: flex;
+justify-content: center;
+}
+
+.responsive-iframe-container iframe,
+.vresponsive-iframe-container object,
+.vresponsive-iframe-container embed {
+position: absolute;
+width: 90%;
+height: 70%;
+}
+
+@media screen and (max-width: 1180px) {
+.responsive-iframe-container {
+position: relative;
+padding-bottom: 56.25%;
+padding-top: 30px;
+margin-top: 30px;
+margin-bottom: 50px;
+height: 0;
+overflow: hidden;
+display: flex;
+justify-content: center;
+}
+
+.responsive-iframe-container iframe,
+.vresponsive-iframe-container object,
+.vresponsive-iframe-container embed {
+position: absolute;
+width: 90%;
+height: 90%;
+}
+}
+</style>
+<div class="responsive-iframe-container container"><iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=America%2FSao_Paulo&showDate=1&showNav=1&showTabs=1&showPrint=0&showCalendars=0&showTz=0&showTitle=0&src=Y18yOTg2YWFmMDI2ODIwYjY2MzI3M2FkMGQ1ZmNkMzk5NTY3OGYxMjExNjEyNzI4YTk1MTcxOTViZGY5MDgwM2NlQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&color=%23E67C73&color=%2333B679" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe></div>
